@@ -1,4 +1,112 @@
-h1{
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;}
 
-    color: brown;
+body {
+  min-height: 100vh;
+  background: linear-gradient(#049aeb, #d37619);
+}
+
+.sidebar {
+  margin: 25px;
+  border-radius: 18px;
+  background-color: #151a2d;
+  width: 260px;
+  height: calc(100vh-30px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+
+.header img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+
+.toggler{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.toggler span{
+  width: 30px;
+  height: 30px;
+  font-size: 1.75rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+
+.menu , .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 5px;
+}
+
+.menu li , .profile li{  list-style-type: none; 
+  padding: 15px;
+}
+.menu li:hover , .profile li:hover{
+  background: #fff;
+}
+
+.menu li:hover a, .btn a .profile li:hover a {
+  color: #333579; /* Updated text color on hover */
+  border-radius: 10px;
+}
+
+
+.menu a, .profile a {
+  color: aliceblue;
+  margin: 15px;
+  outline: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menu .icon, .profile .icon {
+  color: aliceblue;
+  width: 20px;
+  height: 20px;
+}
+
+.profile{
+
+  margin-top: 60px;
+}
+.menu img , .profile img {
+  margin-right: 10px;
+  color: aliceblue;
+}
+
+.btn {
+ padding: 15px;
+ /* margin-top: 10px; */
+  
+}
+.btn img{
+width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.btn a{
+
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.2rem;
+  /* margin-left: 35px; */
 }
